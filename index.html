@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="image/logo/logo.png">
+    <title>ASA NO KIRI</title>
+</head>
+<body>
+
+    <div id="modal">
+        <div class="modal-content">
+            <div class="modal-title">
+                <h2 id="food-name"></h2>
+                <span class="close" onclick="modalClose()">&times;</span>
+            </div>
+            <div id="modal-body">
+
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <img src="image/logo/logo.png" alt="logo du restaurant">
+        <ul>
+            <li>
+                <a href="#presentation">QUI&nbsp;SOMMES-NOUS?</a>
+                <img src="image/logo/temple.png" alt="logo">
+            </li>
+            <li>
+                <a href="template/food-card.html">NOTRE&nbsp;CARTE</a>
+                <img src="image/logo/menu-card.png" alt="logo">
+            </li>
+            <li>
+                <a href="template/order.html">COMMANDEZ</a>
+                <img src="image/logo/address.png" alt="logo">
+            </li>
+            <li>
+                <a href="#">NOS&nbsp;RESEAUX</a>
+                <img src="image/logo/social-media.png" alt="logo">
+            </li>
+        </ul>
+    </header>
+
+    <main>
+
+        <section id="home">
+            
+            <div class="slider">
+                <div class="slider-nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path onclick="previous()" stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+                    </svg>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path onclick="next()" stroke-linecap="round" stroke-linejoin="round" d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                    </svg>                      
+                </div>
+
+                <div class="slider-content">
+                    
+                    <div class="item-slider">
+                        
+                        <img src="image/plat/curry.webp" alt="">
+
+                        <div class="item-content">
+                            <h2>Curry Japonais</h2>
+                            <p>
+                                Explorez les délices du Japon avec notre Plat du Jour : le Curry Japonais. Une symphonie de saveurs exquises se marie dans une sauce curry riche, accompagnée de morceaux tendres de viande (ou une version végétarienne) et de légumes croquants. Servi sur un lit de riz japonais moelleux, chaque bouchée est une escapade culinaire unique. Une expérience inoubliable disponible aujourd'hui seulement !
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="item-slider">
+                        
+                        <img src="image/plat/Okonomiyaki.jpg" alt="">
+
+                        <div class="item-content">
+                            <h2> Okonomiyaki</h2>
+                            <p>
+                                Succombez à la gourmandise avec notre Plat du Jour : l'Okonomiyaki. Une crêpe japonaise délicieusement personnalisable, chargée de chou, de fruits de mer ou de porc. Grillée à la perfection, elle est drapée de sauce okonomi, de mayonnaise et de bonite séchée. Un festin japonais, disponible aujourd'hui uniquement !
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="item-slider">
+                        
+                        <img src="image/plat/ramen-6.webp" alt="">
+
+                        <div class="item-content">
+                            <h2>Le ramen</h2>
+                            <p>
+                                Plongez dans un tourbillon de saveurs avec notre Plat du Jour : les Ramen. Des nouilles délicieusement moelleuses, baignant dans un bouillon riche, accompagnées de tranches de porc fondantes, de légumes croquants et d'un œuf mollet. Un voyage culinaire instantané au cœur du Japon, disponible en exclusivité aujourd'hui !
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="item-slider">
+                        
+                        <img src="image/plat/sushi-2.jpg" alt="">
+
+                        <div class="item-content">
+                            <h2>Les sushis</h2>
+                            <p>
+                                Explorez l'art de la simplicité et de la fraîcheur avec notre Plat du Jour : les Sushis. Des bouchées exquises de riz vinaigré garni de poisson frais, de crevettes succulentes, et d'avocat crémeux, le tout enveloppé dans des feuilles d'algue. Laissez-vous emporter par la délicatesse de chaque pièce, une expérience culinaire légère et raffinée, à déguster aujourd'hui seulement !
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="presentation">
+            <h1>ASA NO KIRI</h1>
+            <div class="conteneur-text-presentation">
+                <p>
+                    Embarquez dans une aventure culinaire et gastronomique au cœur de la cuisine japonaise authentique au restaurant Asa No Kiri.</br>
+                    Notre établissement vous invite à découvrir les saveurs vibrantes et les traditions séculaires de la culture nippone à travers une expérience gastronomique raffinée et conviviale.
+                </p>
+            </div>
+            <ul class="list-specialite">
+                <li><p>Ramen</p><img src="image/logo/ramen.png" alt="logo d'un ramen"></li>
+                <li><p>Sushis</p><img src="image/logo/sushis.png" alt="logo d'un sushis"></li>
+                <li><p>Yakitoris</p><img src="image/logo/yakitori.png" alt="logo d'un yakitorid"></li>
+                <li><p>Onigiri</p><img src="image/logo/onigiri.png" alt="logo d'un onigiri"></li>
+                <li><p>Tempuras</p><img src="image/logo/tempura.png" alt="logo d'un tempuras"></li>
+            </ul>
+        </section>
+
+        <section id="food-list">
+
+            <div class="food-list-dish">
+
+                <div class="list-dish-4">
+
+                    <img class="content-dish" src="image/plat/Tempuras.jpg" onclick="modalOpen(); modalContent('Tempura de Crevettes Dorées')">
+
+                    <img class="content-dish" src="image/plat/Okonomiyaki.jpg" onclick="modalOpen(); modalContent('Tempura de Crevettes Dorées')">
+
+                </div>
+
+                <div class="list-dish-2">
+
+                    <img class="content-dish" src="image/plat/curry-2.png" onclick="modalOpen(); modalContent('Curry Impérial')">
+
+                    <img class="content-dish" src="image/plat/sushi.jpg" onclick="modalOpen(); modalContent('Sakura Sensation')">
+
+                    <img class="content-dish" src="image/plat/onigiri.jpg" onclick="modalOpen(); modalContent('Poulet Karaage')">
+                </div>
+            </div>
+
+            <div class="food-list-dish">
+
+                <div class="list-dish-3">
+                    <img class="content-dish" src="image/plat/curry.webp" onclick="modalOpen(); modalContent('Curry Gourmand')">
+                </div>
+
+                <div class="list-dish-1">
+
+                    <img class="content-dish" src="image/plat/Yakitoris.jpg" onclick="modalOpen(); modalContent('Yakitori Classique au Poulet')">
+
+                    <img class="content-dish" src="image/plat/tempuras-2.jpg" onclick="modalOpen(); modalContent('Tempura de Légumes Colorés')">
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="script/main.js"></script>
+</body>
+</html>

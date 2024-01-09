@@ -1,0 +1,203 @@
+:root{
+    --color-blanc: #FFF;
+    --color-rouge: #D12C23;
+}
+
+*,::before,::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* global */
+body{
+    background-color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+p{
+    color: var(--color-blanc);
+}
+
+h2{
+    color: var(--color-blanc);
+    margin-left: 5%;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    height: 100vh;
+}
+section:nth-child(1){
+    height: 90vh;
+}
+
+/* header */
+header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    height: 100%;
+}
+header ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    color: var(--color-blanc);
+}
+header li{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+header li img{
+    width: 10%;
+}
+
+/* home */
+#home{
+    margin-bottom: 5%;
+}
+#home nav li{
+    width: 12%;
+    border: 4px solid var(--color-rouge);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+#home nav img{
+    margin-left: 5%;
+    width: 15%;
+}
+#home nav h4{
+    color: var(--color-blanc);
+    cursor: pointer;
+    
+}
+#home nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#home nav ul{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* liste des 4 produits les plus populaires */
+.list-card-best-dish{
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;  
+}
+
+
+.container-card-best-dish{
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.element-card-dish{
+    width: 20%;
+    height: 90%;
+    border-radius: 25px;
+    border: 5px solid var(--color-rouge);
+    overflow: hidden;
+}
+.element-card-dish img{
+    height: 100%;
+}
+
+/* toutes la listes des produits */
+#list-card-all-dish{
+    height: fit-content;
+}
+
+.food-list-dish{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* premiére ligne */
+.list-dish-1{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.list-dish-1 .content-dish{
+    width: 30%;
+    height: 80%;
+    border: 7px solid var(--color-rouge);
+    border-radius: 20px;
+}
+
+
+/* seconde liste */
+.list-dish-2{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.list-dish-2 .content-dish{
+    width: 20%;
+    height: 70%;
+    border: 7px solid var(--color-rouge);
+    border-radius: 20px;
+}
+
+/* troisiémes liste */
+.list-dish-3{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-dish-3 .content-dish{
+    width: 45%;
+    height: 90%;
+    border: 7px solid var(--color-rouge);
+    border-radius: 20px;
+}
+
+/* quatriéme liste */
+.list-dish-4{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.list-dish-4 .content-dish{
+    width: 30%;
+    height: 85%;
+    border: 7px solid var(--color-rouge);
+    border-radius: 20px;
+}
+.list-dish-4 .content-dish:nth-child(2){
+    width: 45%;
+}
+
+.food-list-dish:nth-child(3) .list-dish-4{
+    flex-direction: row-reverse;
+}

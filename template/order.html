@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/order.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="../image/logo/logo.png" alt="logo du restaurant">
+        <ul>
+            <li>
+                <a href="../index.html#presentation">QUI&nbsp;SOMMES-NOUS?</a>
+                <img src="../image/logo/temple.png" alt="logo">
+            </li>
+            <li>
+                <a href="../template/food-card.html">NOTRE&nbsp;CARTE</a>
+                <img src="../image/logo/menu-card.png" alt="logo">
+            </li>
+            <li>
+                <a href="../template/order.html">COMMANDEZ</a>
+                <img src="../image/logo/address.png" alt="logo">
+            </li>
+            <li>
+                <a href="#">NOS&nbsp;RESEAUX</a>
+                <img src="../image/logo/social-media.png" alt="logo">
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="part-contact">
+            <h2>RETROUVEZ-NOUS SUR LYON</h2>
+            <div id="map">
+                <img src="../image/map/map.PNG" alt="emplacement du restaurant">
+            </div>
+            <p><span class="span-color">NOUS APPELEZ: </span> 00 11 22 33 44</p>
+        </div>
+
+        <div class="part-contact">
+            <h2>FAIRE UNE RESERVATION</h2>
+            <form action="#" method="get">
+                <div class="first-part-content">
+
+                    <div class="content">
+                        <label for="lastName"></label>
+                        <input type="text" name="lastName" placeholder="Votre nom">
+                    </div>
+
+                    <div class="content">
+                        <label for="firstName"></label>
+                        <input type="text" name="firstName" placeholder="Votre prénom">
+                    </div>
+
+                    <div class="content">
+                        <label for="email"></label>
+                        <input type="email" form="email" placeholder="Votre email">
+                    </div>
+                    
+                    <div class="content">
+                        <label for="number"></label>
+                        <input type="text" form="number" placeholder="Numéro de téléphone">
+                    </div>
+
+                </div>
+                <div class="text-content">
+                    <label for="text"></label>
+                    <textarea name="text" cols="50" rows="10" placeholder="Merci de préciser vos envies"></textarea>
+                </div>
+                <button id="formButton" type="submit">ENVOYER</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

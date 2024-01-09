@@ -1,0 +1,144 @@
+:root{
+    --color-blanc: #FFF;
+    --color-rouge: #D12C23;
+    --color-noir: #000;
+}
+
+*,::before,::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* global */
+body{
+    background-color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+p{
+    color: var(--color-blanc);
+}
+
+h2{
+    color: var(--color-blanc);
+    margin-left: 5%;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    height: 100vh;
+}
+
+/* header */
+header{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    height: 100%;
+}
+header ul{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    color: var(--color-blanc);
+}
+header li{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+header li img{
+    width: 10%;
+}
+
+/* main */
+main{
+    height: 90vh;
+    display: flex;
+}
+
+#map{
+    width: 80%;
+    margin: 0 auto;
+    background: #d6d6d6;
+}
+#map img{
+    width: 100%;
+}
+
+.part-contact{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.part-contact:nth-child(1){
+    justify-content: space-between;
+}
+.part-contact:nth-child(1) p{
+    margin-left: 5%;
+}
+.part-contact:nth-child(2){
+    justify-content: space-around;
+}
+.part-contact:nth-child(2) form{
+    height: 80%;
+}
+
+.first-part-content{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.span-color{
+    color: var(--color-rouge);
+}
+
+.content{
+    width: 34%;
+    margin: 0 auto;
+}
+.content input{
+    height: 4vh;
+    border: none;
+    outline: none;
+    color: var(--color-blanc);
+    background-color: var(--color-noir);
+}
+
+.text-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-content textarea{
+    background-color: var(--color-noir);
+    border: none;
+    color: var(--color-blanc);
+    outline: none;
+}
+
+#formButton{
+    margin: 3% 0 0 50%;
+    padding: 0.5% 3%;
+    outline: none;
+    border: 1px solid var(--color-rouge);
+    color: var(--color-rouge);
+    background-color: var(--color-noir);
+    cursor: pointer;
+}
