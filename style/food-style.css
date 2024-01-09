@@ -66,17 +66,18 @@ header li img{
     width: 10%;
 }
 
+
 /* Classe et Id */
 /* modal */
 #modal{
     display: none;
     border: 5px solid var(--color-rouge);
-    width: 70vw;
-    height: 80vh;
+    width: 50vw;
+    height: 40vh;
     background-color: var(--color-noir);
     position: fixed;
-    top: 12%;
-    left: 14.7%;
+    top: 25%;
+    left: 26%;
     z-index: 100;
     color: white;
 }
@@ -97,6 +98,9 @@ header li img{
 
 #modal-body{
     margin-top: 5%;
+    padding: 1%;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
 }
 
 .close{
