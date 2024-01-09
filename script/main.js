@@ -1,5 +1,4 @@
 // on initialise nos variables et nos constantes
-const widthslider = document.querySelector(".slider").offsetWidth;
 let modal = document.getElementById("modal");
 let nameDish = document.getElementById("food-name");
 let modalBody = document.getElementById("modal-body");
@@ -117,7 +116,6 @@ function modalOpen() {
     modal.classList.add("appears");
     document.body.classList.add("modal-open");
 }
-
 function modalClose(){
     modal.classList.remove("appears");
     document.body.classList.remove("modal-open");
@@ -132,13 +130,4 @@ function modalContent(name){
             modalBody.innerHTML = content;
         } 
     })
-}
-
-// Fonction slider
-function previous(){
-    document.querySelector(".slider-content").scrollLeft -= widthslider;
-}
-
-function next(){
-    document.querySelector(".slider-content").scrollLeft += widthslider;
 }

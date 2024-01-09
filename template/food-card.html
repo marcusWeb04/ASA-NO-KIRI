@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="modal">
+        <div class="modal-content">
+            <div class="modal-title">
+                <h2 id="food-name"></h2>
+                <span class="close" onclick="modalClose()">&times;</span>
+            </div>
+            <div id="modal-body">
+
+            </div>
+        </div>
+    </div>
     <header>
         <img src="../image/logo/logo.png" alt="logo du restaurant">
         <ul>
@@ -40,21 +51,19 @@
                     <li><h4>Tempuras</h4> <img src="../image/logo/tempura.png"></li>
                 </ul>
             </nav>
-
             <div class="list-card-best-dish">
                 <h2>NOS PRODUITS FAVORIES</h2>
-
                 <div class="container-card-best-dish">
-                    <div class="element-card-dish">
+                    <div class="element-card-dish" onclick="modalOpen(); modalContent('Ramen au Porc et à l\'Oeuf')">
                         <img src="../image/plat/ramen-6.webp" alt="Le plâts favories de nos clients est le ramen">
                     </div>
-                    <div class="element-card-dish">
+                    <div class="element-card-dish" onclick="modalOpen(); modalContent('Curry Impérial')">
                         <img src="../image/plat/curry-2.png" alt="Le second est le curry">
                     </div>
-                    <div class="element-card-dish">
+                    <div class="element-card-dish" onclick="modalOpen(); modalContent('Sakura Sensation')">
                         <img src="../image/plat/sushi.jpg" alt="En troisiémes places nous retrouvons les sushis">
                     </div>
-                    <div class="element-card-dish">
+                    <div class="element-card-dish" onclick="modalOpen(); modalContent('Poulet Karaage')">
                         <img src="../image/plat/onigiri.jpg" alt="Pour les petites faims, nos clients aimes dégusté des onigiris">
                     </div>
                 </div>
@@ -68,33 +77,33 @@
 
                 <div class="list-dish-4">
 
-                    <img class="content-dish" src="../image/plat/tempuras.jpg" alt="">
+                    <img class="content-dish" src="../image/plat/tempuras.jpg" onclick="modalOpen(); modalContent('Tempura de Légumes Colorés')">
 
-                    <img class="content-dish" src="../image/plat/Okonomiyaki.jpg" alt="">
+                    <img class="content-dish" src="../image/plat/Okonomiyaki.jpg" onclick="modalOpen(); modalContent('Okonomiyaki')">
 
                 </div>
 
                 <div class="list-dish-2">
 
-                    <img class="content-dish" src="../image/plat/Yakitoris-2.jpg" alt="">
+                    <img class="content-dish" src="../image/plat/Yakitoris-2.jpg" onclick="modalOpen(); modalContent('Yakitori aux Légumes Grillés')">
 
-                    <img class="content-dish" src="../image/plat/sushi.jpg" alt="">
+                    <img class="content-dish" src="../image/plat/sushi.jpg" onclick="modalOpen(); modalContent('La Perle Céleste')">
 
-                    <img class="content-dish" src="../image/plat/onigiri.jpg" alt="">
+                    <img class="content-dish" src="../image/plat/onigiri.jpg" onclick="modalOpen(); modalContent('Classique au Saumon Grillé')">
                 </div>
             </div>
 
             <div class="food-list-dish">
 
-                <div class="list-dish-3">
-                    <img class="content-dish" src="../image/plat/ramen-6.webp" alt="">
+                <div class="list-dish-3" onclick="modalOpen(); modalContent('Ramen au Porc et à l\'Oeuf')">
+                    <img class="content-dish" src="../image/plat/ramen-6.webp">
                 </div>
 
                 <div class="list-dish-1">
 
-                    <img class="content-dish" src="../image/plat/Yakitoris.jpg" alt="">
+                    <img class="content-dish" src="../image/plat/Yakitoris.jpg" onclick="modalOpen(); modalContent('Yakitori Classique au Poulet')">
 
-                    <img class="content-dish" src="../image/plat/curry-3.jpeg" alt="">
+                    <img class="content-dish" src="../image/plat/curry-3.jpeg" onclick="modalOpen(); modalContent('Curry Japonais')">
 
                 </div>
 
@@ -104,19 +113,19 @@
 
                 <div class="list-dish-2">
 
-                    <img class="content-dish" src="../image/plat/ramen-2.jpeg" alt="">
+                    <img class="content-dish" src="../image/plat/ramen-2.jpeg" onclick="modalOpen(); modalContent('Ramen au Porc Pané')">
 
-                    <img class="content-dish" src="../image/plat/takoyaki.jpg" alt="">
+                    <img class="content-dish" src="../image/plat/takoyaki.jpg" onclick="modalOpen(); modalContent('Délices Octopodiens')">
 
-                    <img class="content-dish" src="../image/plat/Okonomiyaki.jpg" alt="">
+                    <img class="content-dish" src="../image/plat/Okonomiyaki.jpg" onclick="modalOpen(); modalContent('Okonomiyaki')">
                 </div>
 
                 <div class="list-dish-4">
                     
 
-                    <img class="content-dish" src="../image/plat/tokoyaki-2.jpeg" alt="">
+                    <img class="content-dish" src="../image/plat/tokoyaki-2.jpeg" onclick="modalOpen(); modalContent('Takoyaki aux Saveurs Modernes')">
 
-                    <img class="content-dish" src="../image/plat/ramen.jpg" alt="">
+                    <img class="content-dish" src="../image/plat/ramen.jpg" onclick="modalOpen(); modalContent('Ramen au Porc Pané')">
 
                 </div>
 
@@ -124,5 +133,6 @@
 
         </section>
     </main>
+    <script src="../script/main.js"></script>
 </body>
 </html>
